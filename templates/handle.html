@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="content-section">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Enter a Twitter Handle to Get a Video!</legend>
+                <div class="form-group">
+                    {{ form.username.label<class=form-control-label") }}
+                    {{ form.username(class="form-control form-control-lg") }}
+                </div>
+            </fieldset>
+            <div class="form-group">
+                {{ form.get_video(class="btn btn-outline-info") }}
+            </div>
+        </form>
+    </div>
+{% endblock content}
